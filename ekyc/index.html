@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>ASIM eKYC</title>
+  <link rel="stylesheet" type="text/css" href="./ekyc.css" />
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body>
+
+<h1>eKYC Demo</h1>
+  <table>
+    <tr>
+      <td>
+        <div class="screen">
+          <h2>Quay mặt <strong>sang trái</strong> nhé
+            <img src="./images/icon-speaker.svg">
+          </h2>
+          <div class="circle">
+            <div class="avatar" id="left-face"></div>
+            <lottie-player src="/ekyc/lottie/left.json" background="Transparent" speed="1" direction="1" mode="normal" loop autoplay></lottie-player>
+            
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="screen">
+          <h2>Quay mặt <strong>sang phải</strong> nhé
+            <img src="./images/icon-speaker.svg">
+          </h2>
+          <div class="circle">
+            <div class="avatar" id="right-face"></div>
+            <lottie-player src="/ekyc/lottie/right.json" background="Transparent" speed="1" direction="1" mode="normal" loop autoplay></lottie-player>
+          </div>
+        </div>
+      </td>
+      <td>
+        <h3>Audio Test</h3>
+        <div class="audio">
+          <h4>Hãy quay mặt sang trái để quét</h4>
+          <audio controls>
+            <source src="./sound/left.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+          </audio>
+          <h4>Tiếp tục quay mặt sang phải để quét</h4>
+          <audio controls>
+            <source src="./sound/right.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+          </audio>
+          <h4>Nhìn thẳng vào màn hình để hoàn tất</h4>
+          <audio controls>
+            <source src="./sound/direct.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+          </audio>
+          <h4>Nhìn thẳng vào thiết bị để hoàn tất</h4>
+          <audio controls>
+            <source src="./sound/look-direct.m4a" type="audio/mpeg">
+            Your browser does not support the audio tag.
+          </audio>
+          <h4>Không quét được khuôn mặt</h4>
+          <audio controls>
+            <source src="./sound/error.m4a" type="audio/mpeg">
+            Your browser does not support the audio tag.
+          </audio>
+          <h4>Tốt lắm!</h4>
+          <audio controls>
+            <source src="./sound/good.m4a" type="audio/mpeg">
+            Your browser does not support the audio tag.
+          </audio>
+          <h4>Timer</h4>
+          <audio controls>
+            <source src="./sound/timer.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+          </audio>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="/ekyc/sound/">Sound Files</a> | <a href="/ekyc/lottie/">Lottie JSON</a></td>
+      <td></td>
+    </tr>
+  </table>
+
+  <p class="credit">&copy; 2023 ASIM Group</p>
+</body>
+
+</html>
